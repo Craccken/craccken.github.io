@@ -5,72 +5,19 @@
         <meta charset="UTF-8">                                                                                      <!-- Specifies the character encoding for the HTML -->
         <meta name="application-name" content="Craccken Linux">                                                     <!-- Specifies the name of the web application that page is represents. -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">                    <!-- Controls the viewport (the user's visible area of web page), "width" sets the width to follow the screen-width, "initial-scale" sets the initial zoom level when page is fist loaded--> 
-        <meta name="author" content="Craccken-Team">                                                                <!-- Define the author of a page -->
+        <meta name="author" content="Craccken-team">                                                                <!-- Define the author of a page -->
         <meta name="theme color" content="#050505">                                                                 <!-- Suggest a color that browsers should use to customize the display of the page. -->
-        <meta name="description" content="Craccken linux an Arch based, minimal focused linux distro">              <!-- Specifies a description of the page -->
-        <meta name="og:title" content="Craccken - Flexibility focused linux distro">                                <!-- Define open-graph title -->
+        <meta name="description" content="Craccken linux an Arch based, Lightweight focused linux distro">          <!-- Specifies a description of the page -->
+        <meta name="og:title" content="Craccken - Lightweight focused linux distro">                                <!-- Define open-graph title -->
         <meta name="og:locale" content="en_US">                                                                     <!-- Define the content language -->
         <meta name="og:site_name" content="Craccken">                                                               <!-- Define name of overall website content -->
-        <meta name="og:description" content="Flexibility and focused linux distro, with builtin tools-installer.">  <!-- Define open-graph description of the content -->
+        <meta name="og:description" content="Lightweight focused linux distro, with builtin useful-tools.">         <!-- Define open-graph description of the content -->
         <meta name="og:url" content="https://craccken.github.io">                                                   <!-- Define the url of the content -->
         <meta name="og:type" content="Technology">                                                                  <!-- Define type of object sharing -->
         <link rel="icon" href="source/favicons.png" type="image/png">                                               <!-- Set favicons of the page -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link href="style.css" rel="stylesheet">
+        <link href="style/style.css" rel="stylesheet">
+        <link href="init.css" rel="stylesheet">
     </head>
     <body>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark shadow-lg p-3" style="background-color: #070707">
-            <div class="container">
-                <a class="navbar-brand text-white" href="#">Craccken</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav margin-start ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Download</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- End navbar -->
-
-        <!-- jumbotron -->
-        <section class="jumbotron text-center">
-            <img src="/home/letris/Downloads/favicons.png" alt="Craccken Linux" 
-                width="120rem" height="130rem"
-                style="margin: 1.1rem;">
-            <h1 class="display-4">Craccken Linux</h1>
-            <p class="lead">Lightweigth linux distro</p>
-        </section>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#050505" fill-opacity="1" d="M0,256L0,64L36.9,64L36.9,224L73.8,224L73.8,288L110.8,288L110.8,64L147.7,64L147.7,96L184.6,96L184.6,32L221.5,32L221.5,32L258.5,32L258.5,64L295.4,64L295.4,64L332.3,64L332.3,224L369.2,224L369.2,256L406.2,256L406.2,192L443.1,192L443.1,192L480,192L480,96L516.9,96L516.9,64L553.8,64L553.8,32L590.8,32L590.8,0L627.7,0L627.7,224L664.6,224L664.6,96L701.5,96L701.5,256L738.5,256L738.5,128L775.4,128L775.4,256L812.3,256L812.3,0L849.2,0L849.2,256L886.2,256L886.2,288L923.1,288L923.1,160L960,160L960,224L996.9,224L996.9,256L1033.8,256L1033.8,288L1070.8,288L1070.8,288L1107.7,288L1107.7,256L1144.6,256L1144.6,64L1181.5,64L1181.5,32L1218.5,32L1218.5,288L1255.4,288L1255.4,320L1292.3,320L1292.3,320L1329.2,320L1329.2,96L1366.2,96L1366.2,224L1403.1,224L1403.1,32L1440,32L1440,0L1403.1,0L1403.1,0L1366.2,0L1366.2,0L1329.2,0L1329.2,0L1292.3,0L1292.3,0L1255.4,0L1255.4,0L1218.5,0L1218.5,0L1181.5,0L1181.5,0L1144.6,0L1144.6,0L1107.7,0L1107.7,0L1070.8,0L1070.8,0L1033.8,0L1033.8,0L996.9,0L996.9,0L960,0L960,0L923.1,0L923.1,0L886.2,0L886.2,0L849.2,0L849.2,0L812.3,0L812.3,0L775.4,0L775.4,0L738.5,0L738.5,0L701.5,0L701.5,0L664.6,0L664.6,0L627.7,0L627.7,0L590.8,0L590.8,0L553.8,0L553.8,0L516.9,0L516.9,0L480,0L480,0L443.1,0L443.1,0L406.2,0L406.2,0L369.2,0L369.2,0L332.3,0L332.3,0L295.4,0L295.4,0L258.5,0L258.5,0L221.5,0L221.5,0L184.6,0L184.6,0L147.7,0L147.7,0L110.8,0L110.8,0L73.8,0L73.8,0L36.9,0L36.9,0L0,0L0,0Z"></path></svg> <!-- Some shitty wave -->
-        <!-- end jumbotron -->
-        
-        <!-- About Craccken-->
-        <section id="about">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col">
-                        <h2>About Me</h2>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
