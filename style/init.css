@@ -7,7 +7,7 @@
     src: url("source/font/CozetteVector.ttf"); /* Defines the URL(s) where the font should be downloaded from */
 }
 
-html {
+html { /* Define style for html */
     font-size: 1.1rem;
     font-family: "Cozette"; /* Set font are used for text */
     background-color: #000000; /* Set the background-color */
@@ -15,18 +15,6 @@ html {
 
 body { /* Defines style for body */
     color: var(--text-color); /* Set the foreground-color */
-    margin: 0; /* Define space/blank around elements, outside of any border */
-    padding: 1px; /* Create space/blank around elements, inside of any defined borders */
-}
-
-footer { /* Defines style for footer */
-    text-align: center; /* Set text alignment */
-    background-color: #070707; /* Set the background-color */
-    color: var(--text-color); /* Set the foreground-color */
-}
-
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;      /* Define space/blank around elements, outside of any border */
+    padding: 0px;   /* Create space/blank around elements, inside of any defined borders */
 }
