@@ -1,0 +1,56 @@
+.menu {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  display: none;
+  box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 6px;
+  z-index: 999;
+}
+
+@media (max-width: 500px) {
+  .menu {
+    display: flex;
+  }
+  header .list {
+    display: none;
+  }
+  footer {
+    margin-bottom: 80px;
+  }
+  .Preview .container {
+    height: 50vh;
+  }
+  .Preview .swiper {
+    width: 80%;
+  }
+}
+
+.menu .icons {
+  padding: 19px 40px;
+  font-size: 29px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease-out;
+}
+
+.menu .icons span {
+  position: absolute;
+  color: #ff5361;
+  width: 100%;
+  height: 100%;
+  padding: 20px 40px;
+  left: 0;
+  top: 100%;
+  border-bottom: 5px solid #ff5361;
+}
+
+.menu .icons-up {
+  transform: translateY(-100%);
+}

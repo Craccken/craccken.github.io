@@ -1,20 +1,75 @@
 :root {
-    --text-color: #afafaf;
+  --text-color: #afafaf;
 }
 
-@font-face { /* Import font */
-    font-family: "Cozette"; /* Define the name of the font */
-    src: url("source/font/CozetteVector.ttf"); /* Defines the URL(s) where the font should be downloaded from */
+@font-face {
+  /* Import font */
+  font-family: "Cozette"; /* Define the name of the font */
+  src: url("source/font/CozetteVector.ttf"); /* Defines the URL(s) where the font should be downloaded from */
 }
 
-html { /* Define style for html */
-    font-size: 1.1rem;
-    font-family: "Cozette"; /* Set font are used for text */
-    background-color: #000000; /* Set the background-color */
+html {
+  /* Define style for html */
+  font-size: 1.1rem;
+  font-family: "Cozette"; /* Set font are used for text */
+  background-color: #000000; /* Set the background-color */
 }
 
-body { /* Defines style for body */
-    color: var(--text-color); /* Set the foreground-color */
-    margin: 0;      /* Define space/blank around elements, outside of any border */
-    padding: 0px;   /* Create space/blank around elements, inside of any defined borders */
+body {
+  /* Defines style for body */
+  color: var(--text-color); /* Set the foreground-color */
+  margin: 0; /* Define space/blank around elements, outside of any border */
+  padding: 0; /* Create space/blank around elements, inside of any defined borders */
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+header h1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: start;
+}
+
+header .list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+header .list li a {
+  margin-left: 30px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #afafaf;
+}
+header .list li a:hover {
+  opacity: 0.8;
+}
+
+.Preview h2 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+footer a {
+  margin-right: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #afafaf;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+footer a:hover {
+  opacity: 0.8;
 }

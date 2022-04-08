@@ -1,57 +1,181 @@
-<!DOCTYPE html> <!-- Help browser to understand the version of HTML the document is written in for better interpretability -->
+<!DOCTYPE html>
+<!-- Help browser to understand the version of HTML the document is written in for better interpretability -->
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">                                                                                                                                  <!-- Specifies the character encoding for the HTML -->
-        <meta name="application-name" content="Craccken Linux">                                                                                                 <!-- Specifies the name of the web application that page is represents. -->
-        <!-- <meta http-equiv="refresh" content="5">                                                                                                            <!-- Refresh the page every five seconds -->
-        <meta name="mobile-web-app-capable" content="yes">                                                                                                      <!-- Set up website to have an application shortcut icon added to a device homescreen and the app launch in full-screen "app-mode" (android) -->
-        <meta name="theme-color" content="#050505">                                                                                                             <!-- Set color for status bar and address bar in meta tag (android) -->
-        <meta name="apple-mobile-web-app-capable" content="yes">                                                                                                <!-- Set up website to have an application shortcut icon added to a device homescreen and the app launch in full-screen "app-mode" (IOS) -->
-        <meta name="apple-mobile-web-app-status-bar-style" content="#050505">                                                                                   <!-- Set color for status bar and address bar in meta tag (IOS) -->
-        <meta name="author" content="Craccken">                                                                                                                 <!-- Set the author of the page --> 
-        <meta name="description" content="Craccken linux an Arch based, minimal focused linux distro">                                                          <!-- Set the description of the page -->
-        <meta name="og:title" content="Craccken - Flexibility focused linux distro">                                                                            <!-- Define open-graph title -->
-        <meta name="og:locale" content="en_US">                                                                                                                 <!-- Define the content language -->
-        <meta name="og:site_name" content="Craccken">                                                                                                           <!-- Define name of overall website content -->
-        <meta name="og:description" content="Flexibility and focused linux distro, with builtin tools-installer.">                                              <!-- Define open-graph description of the content -->
-        <meta name="og:url" content="https://craccken.github.io">                                                                                               <!-- Define the url of the content -->
-        <meta name="og:type" content="Technology">                                                                                                              <!-- Define type of object sharing -->
-        <meta name="keywords" content="Linux, Arch, Craccken, Technology">                                                                                      <!-- Set keywords for search engines (comma-separated) -->
-        <meta name="robots" content="notranslate">                                                                                                              <!-- Do not offer translations of this page in search results -->
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">    <!-- Controls the viewport (the user's visible area of web page), "width" sets the width to follow the screen-width, "initial-scale" sets the initial zoom level when page is fist loaded--> 
-        <title>Craccken Linux</title>                                   <!-- Define title of the web page -->
-        <link rel="icon" href="source/favicons.png" type="image/png">   <!-- Set favicons of the page -->
-        <link href="style/init.css" rel="stylesheet">
-    </head>
-    <body>
-        <main> <!-- This elements contains the MAIN CONTENT of the page -->
-            <header> <!-- This elements represents introductory content for its nearest ancestor sectioning content or sectioning root element -->
-                <h1>Welcome to Craccken Linux</h1>
-            </header>
-            <hr>
-            <div class="Features"> <!-- Create group elements -->
-                <h2>Features</h2>
-                <ul>
-                    <li>Built-in with powerful tools</li>
-                    <li>Beautiful UI</li>
-                    <li>Fast and versatile</li>
-                    <li>Super configured ZSH</li>
-                    <li>Manage configuration make easy with <b><abbr title="Tools for edit custom configurations you can edit it in /etc/zsh/functions/edit_configuration">edit-configuration</abbr></b> tools</li>
-                    <li>Built-in with live-wallpaper</li>
-                    <li>Super configured <b>NEOVIM</b></li>
-                    <li>PipeWire as default media server</li>
-                    <li>Wayland as default display server</li>
-                </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Specifies the character encoding for the HTML -->
+    <meta name="application-name" content="Craccken Linux" />
+    <!-- Specifies the name of the web application that page is represents. -->
+    <!-- <meta http-equiv="refresh" content="5">                                                                                                            <!-- Refresh the page every five seconds -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- Set up website to have an application shortcut icon added to a device homescreen and the app launch in full-screen "app-mode" (android) -->
+    <meta name="theme-color" content="#050505" />
+    <!-- Set color for status bar and address bar in meta tag (android) -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Set up website to have an application shortcut icon added to a device homescreen and the app launch in full-screen "app-mode" (IOS) -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#050505" />
+    <!-- Set color for status bar and address bar in meta tag (IOS) -->
+    <meta name="author" content="Craccken" />
+    <!-- Set the author of the page -->
+    <meta name="description" content="Craccken linux an Arch based, minimal focused linux distro" />
+    <!-- Set the description of the page -->
+    <meta name="og:title" content="Craccken - Flexibility focused linux distro" />
+    <!-- Define open-graph title -->
+    <meta name="og:locale" content="en_US" />
+    <!-- Define the content language -->
+    <meta name="og:site_name" content="Craccken" />
+    <!-- Define name of overall website content -->
+    <meta name="og:description" content="Flexibility and focused linux distro, with builtin tools-installer." />
+    <!-- Define open-graph description of the content -->
+    <meta name="og:url" content="https://craccken.github.io" />
+    <!-- Define the url of the content -->
+    <meta name="og:type" content="Technology" />
+    <!-- Define type of object sharing -->
+    <meta name="keywords" content="Linux, Arch, Craccken, Technology" />
+    <!-- Set keywords for search engines (comma-separated) -->
+    <meta name="robots" content="notranslate" />
+    <!-- Do not offer translations of this page in search results -->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Controls the viewport (the user's visible area of web page), "width" sets the width to follow the screen-width, "initial-scale" sets the initial zoom level when page is fist loaded-->
+    <title>Craccken Linux</title>
+    <!-- Define title of the web page -->
+    <link rel="icon" href="source/favicons.png" type="image/png" />
+    <!-- Set favicons of the page -->
+    <link href="style/init.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style/nav-bottom.css" />
+    <link rel="stylesheet" href="style/swiper.css" />
+    <!-- My Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+    <!-- My Swiper on https://swiperjs.com/get-started in CDN-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <main>
+      <!-- This elements contains the MAIN CONTENT of the page -->
+      <header>
+        <!-- This elements represents introductory content for its nearest ancestor sectioning content or sectioning root element -->
+        <h1>Welcome to Craccken Linux</h1>
+        <ul class="list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Comment</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </header>
+      <hr />
+      <div class="Features">
+        <!-- Create group elements -->
+        <h2>Features</h2>
+        <ul>
+          <li>Built-in with powerful tools</li>
+          <li>Beautiful UI</li>
+          <li>Fast and versatile</li>
+          <li>Super configured ZSH</li>
+          <li>
+            Manage configuration make easy with <b><abbr title="Tools for edit custom configurations you can edit it in /etc/zsh/functions/edit_configuration">edit-configuration</abbr></b> tools
+          </li>
+          <li>Built-in with live-wallpaper</li>
+          <li>Super configured <b>NEOVIM</b></li>
+          <li>PipeWire as default media server</li>
+          <li>Wayland as default display server</li>
+        </ul>
+      </div>
+      <hr />
+      <div class="Preview">
+        <!-- Create group elements -->
+        <h2>Preview</h2>
+        <div class="container">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="img/aston-martin.jpg" alt="" /></div>
+              <div class="swiper-slide"><img src="img/audi-rs-e-tron-gt.jpg" alt="" /></div>
+              <div class="swiper-slide"><img src="img/maserati-mc20.jpg" alt="" /></div>
+              <div class="swiper-slide"><img src="img/nio-et5.jpg" alt="" /></div>
             </div>
-            <hr>
-            <div class="Preview"> <!-- Create group elements -->
-                <h2>Preview</h2>
-            </div>
-            <hr>
-            <footer> <!-- This elements represents a end for its nearest ancestor sectioning content or sectioning root element -->
-                <a href="https://github.com/Craccken/craccken.github.io" target="_blank" rel="noopener noreferrer">Source</a>
-                <a href="mailto:Craccken@protonmail.com">Mail</a>
-            </footer>
-        </main>
-    </body>
+            <!-- If we need pagination
+            <div class="swiper-pagination"></div> -->
+
+            <!-- If we need navigation buttons
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+            <!-- Bagian ini dihapus karena kita tidak Memerlukan Scroll Bar -->
+            <!-- <hr /> -->
+          </div>
+        </div>
+      </div>
+      <hr />
+      <footer>
+        <!-- This elements represents a end for its nearest ancestor sectioning content or sectioning root element -->
+        <a href="https://github.com/Craccken/craccken.github.io" target="_blank" rel="noopener noreferrer">Source</a>
+        <p>|</p>
+        <a href="mailto:Craccken@protonmail.com">Mail</a>
+      </footer>
+      <div class="menu">
+        <div class="icons">
+          <i class="bx bx-home"></i>
+          <span><i class="bx bx-home"></i></span>
+        </div>
+        <div class="icons">
+          <i class="bx bx-chat"></i>
+          <span><i class="bx bx-chat"></i></span>
+        </div>
+        <div class="icons">
+          <i class="bx bx-user-circle"></i>
+          <span><i class="bx bx-user-circle"></i></span>
+        </div>
+      </div>
+    </main>
+  </body>
+  <!-- JS Swiper On https://swiperjs.com/get-started in CDN -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script>
+    // Fungsi Icons
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+      // direction: 'vertical', /* Ini harus dihapus */
+      /* Membuat gambar berpindah sendiri selama waktu yang ditentukan delay. */
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true /* Untuk bisa mengeklik lingkaran dibawah gambar */,
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      // And if we need scrollbar /* Bagian ini dihapus karena kita tidak memerlukan Scroll bar */
+      // scrollbar: {
+      //   el: ".swiper-scrollbar",
+      // },
+    });
+
+    // fungsi Icons
+    const icons = document.querySelectorAll(".icons");
+
+    icons.forEach((i) => {
+      i.addEventListener("click", () => {
+        i.classList.toggle("icons-up");
+        setTimeout(() => {
+          if (i.classList.contains("icons-up")) {
+            i.classList.remove("icons-up");
+          }
+        }, 1000);
+      });
+    });
+  </script>
 </html>

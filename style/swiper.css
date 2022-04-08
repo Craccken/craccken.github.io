@@ -1,0 +1,37 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.container {
+  width: 100%;
+  height: 80vh;
+  /* background-color: #222; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper {
+  width: 60%;
+  height: fit-content;
+}
+.swiper hr {
+  width: auto;
+}
+.swiper-slide img {
+  border-radius: 6px;
+  width: 100%;
+}
+
+/* Mengganti warna Swiper */
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: white;
+}
+
+/* Mengganti warna pada lingkaran dibawah gambar */
+.swiper .swiper-pagination-bullet-active {
+  background: #fff;
+}
