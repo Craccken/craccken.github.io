@@ -6,15 +6,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: #010101; /* Set the background-color */
   display: none;
-  box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  border-radius: 6px;
-  z-index: 999;
+  box-shadow: 0 9px 10px 12px #d70000;
+  overflow: hidden; /* Hides the overflowing content, both scroll bars disappear and the page becomes fixed */
+  border-radius: 20px 20px 0px 0px; /* Set corner radius, it will make navbar rounded */
+  z-index: 777; /* Stack up element, so it will be absolute to the top */
 }
 
-@media (max-width: 500px) {
+@media (max-width: 777px) {
   .menu {
     display: flex;
   }
@@ -42,7 +42,7 @@
 
 .menu .icons span {
   position: absolute;
-  color: #ff5361;
+  color: #d70000;
   width: 100%;
   height: 100%;
   padding: 20px 40px;

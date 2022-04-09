@@ -1,29 +1,45 @@
-:root {
-  --text-color: #afafaf;
+/* 
+ * vim:sts=2 ts=2 sw=2
+ */
+:root { /* Represent an element that is the root of document */
+  --text-color: #dadada;
+  --link-color: #eaeaea;
+  --link-color--hover: #d70000;
+  --background-color: #000000;
 }
 
 @font-face {
-  /* Import font */
   font-family: "Cozette"; /* Define the name of the font */
   src: url("source/font/CozetteVector.ttf"); /* Defines the URL(s) where the font should be downloaded from */
 }
 
 html {
-  /* Define style for html */
-  font-size: 1.1rem;
+  font-size: 1.1rem; /* Set the size of the font */
   font-family: "Cozette"; /* Set font are used for text */
-  background-color: #000000; /* Set the background-color */
+  background-color: var(--background-color); /* Set the background-color */
+}
+
+hr {
+  height: 0.1em; /* Set height of element */
+  border-width: 0px; /* Set to no border */
+  background: linear-gradient(140deg, #d70000 0%, #FF0800 100%);
+}
+
+h1 {
+  font-size: 2.1em;
+  background: -webkit-linear-gradient(140deg, #AA0000 0%, #d70000 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 body {
-  /* Defines style for body */
   color: var(--text-color); /* Set the foreground-color */
   margin: 0; /* Define space/blank around elements, outside of any border */
   padding: 0; /* Create space/blank around elements, inside of any defined borders */
 }
 
 header {
-  display: flex;
+  display: flex; 
   justify-content: space-around;
 }
 
@@ -44,8 +60,9 @@ header .list li a {
   margin-left: 30px;
   margin-right: 10px;
   text-decoration: none;
-  color: #afafaf;
+  color: var(--text-color);
 }
+
 header .list li a:hover {
   opacity: 0.8;
 }
@@ -65,11 +82,12 @@ footer {
 footer a {
   margin-right: 10px;
   margin-left: 10px;
-  text-decoration: none;
-  color: #afafaf;
+  text-decoration: none; /* This Property is used to set or remove decorations from text */
+  color: var(--link-color); /* Set foreground color */
   font-size: 1.5em;
   cursor: pointer;
 }
+
 footer a:hover {
-  opacity: 0.8;
+  color: var(--link-color--hover); /* Set foreground color */
 }

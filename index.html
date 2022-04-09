@@ -1,65 +1,70 @@
-<!DOCTYPE html>
+<!-- vim:sts=2 ts=2 sw=2
+-->
 <!-- Help browser to understand the version of HTML the document is written in for better interpretability -->
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <!-- Specifies the character encoding for the HTML -->
-    <meta name="application-name" content="Craccken Linux" />
+    <meta charset="UTF-8" />
     <!-- Specifies the name of the web application that page is represents. -->
-    <!-- <meta http-equiv="refresh" content="5">                                                                                                            <!-- Refresh the page every five seconds -->
-    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Craccken Linux" />
     <!-- Set up website to have an application shortcut icon added to a device homescreen and the app launch in full-screen "app-mode" (android) -->
-    <meta name="theme-color" content="#050505" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <!-- Set color for status bar and address bar in meta tag (android) -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#050505" />
     <!-- Set up website to have an application shortcut icon added to a device homescreen and the app launch in full-screen "app-mode" (IOS) -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#050505" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <!-- Set color for status bar and address bar in meta tag (IOS) -->
-    <meta name="author" content="Craccken" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#050505" />
     <!-- Set the author of the page -->
-    <meta name="description" content="Craccken linux an Arch based, minimal focused linux distro" />
+    <meta name="author" content="Craccken" />
     <!-- Set the description of the page -->
-    <meta name="og:title" content="Craccken - Flexibility focused linux distro" />
+    <meta name="description" content="Craccken linux an Arch based, minimal focused linux distro" />
     <!-- Define open-graph title -->
-    <meta name="og:locale" content="en_US" />
+    <meta name="og:title" content="Craccken - Flexibility focused linux distro" />
     <!-- Define the content language -->
-    <meta name="og:site_name" content="Craccken" />
+    <meta name="og:locale" content="en_US" />
     <!-- Define name of overall website content -->
-    <meta name="og:description" content="Flexibility and focused linux distro, with builtin tools-installer." />
+    <meta name="og:site_name" content="Craccken" />
     <!-- Define open-graph description of the content -->
-    <meta name="og:url" content="https://craccken.github.io" />
+    <meta name="og:description" content="Flexibility and focused linux distro, with builtin tools-installer." />
     <!-- Define the url of the content -->
-    <meta name="og:type" content="Technology" />
+    <meta name="og:url" content="https://craccken.github.io" />
     <!-- Define type of object sharing -->
-    <meta name="keywords" content="Linux, Arch, Craccken, Technology" />
+    <meta name="og:type" content="Technology" />
     <!-- Set keywords for search engines (comma-separated) -->
-    <meta name="robots" content="notranslate" />
+    <meta name="keywords" content="Linux, Arch, Craccken, Technology" />
     <!-- Do not offer translations of this page in search results -->
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="robots" content="notranslate" />
     <!-- Controls the viewport (the user's visible area of web page), "width" sets the width to follow the screen-width, "initial-scale" sets the initial zoom level when page is fist loaded-->
-    <title>Craccken Linux</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!-- Define title of the web page -->
-    <link rel="icon" href="source/favicons.png" type="image/png" />
+    <title>Craccken Linux</title>
     <!-- Set favicons of the page -->
-    <link href="style/init.css" rel="stylesheet" />
+    <link rel="icon" href="source/favicons.png" type="image/png" />
+    <!-- 
+    ╭──────────────────────────────────────────────────────────────────────────────╮
+    │                                     CSS                                      │
+    ╰──────────────────────────────────────────────────────────────────────────────╯
+    -->
+    <link rel="stylesheet" href="style/init.css"/>
     <link rel="stylesheet" href="style/nav-bottom.css" />
     <link rel="stylesheet" href="style/swiper.css" />
     <!-- My Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
-
     <!-- My Swiper on https://swiperjs.com/get-started in CDN-->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   </head>
   <body>
+    <!-- This elements contains the MAIN CONTENT of the page -->
     <main>
-      <!-- This elements contains the MAIN CONTENT of the page -->
+      <!-- This elements represents introductory content for its nearest ancestor sectioning content or sectioning root element -->
       <header>
-        <!-- This elements represents introductory content for its nearest ancestor sectioning content or sectioning root element -->
-        <h1>Welcome to Craccken Linux</h1>
+        <h1>Craccken Linux</h1>
         <ul class="list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Comment</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#download">Download</a></li>
+          <li><a href="#about">Blog</a></li>
         </ul>
       </header>
       <hr />
