@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "Cozette"; /* Define the name of the font */
-  src: url("source/font/CozetteVector.ttf"); /* Defines the URL(s) where the font should be downloaded from */
+  src: url("../source/font/CozetteVector.ttf"); /* Defines the URL(s) where the font should be downloaded from */
 }
 
 html {
@@ -90,4 +90,9 @@ footer a {
 
 footer a:hover {
   color: var(--link-color--hover); /* Set foreground color */
+}
+
+
+footer a:active {
+  opacity: 0.5; /* Set transparency */
 }
