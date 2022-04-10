@@ -1,20 +1,20 @@
 .menu {
   width: 100%;
-  position: fixed;
+  position: fixed; /* item will follow direction */
   bottom: 0px;
   left: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex; /* set item to side */
+  justify-content: space-between; /* make items space in horizontal */
+  align-items: center; /* make items space in vertical */
   background-color: #010101; /* Set the background-color */
-  display: none;
+  display: none; /* for hide items */
   box-shadow: 0 9px 10px 12px #d70000;
   overflow: hidden; /* Hides the overflowing content, both scroll bars disappear and the page becomes fixed */
   border-radius: 20px 20px 0px 0px; /* Set corner radius, it will make navbar rounded */
   z-index: 777; /* Stack up element, so it will be absolute to the top */
 }
 
-@media (max-width: 777px) {
+@media (max-width: 658px) {
   .menu {
     display: flex;
   }
@@ -27,9 +27,9 @@
   .Preview .container {
     height: 50vh;
   }
-  .Preview .swiper {
+  /* .Preview .swiper {
     width: 80%;
-  }
+  } */
 }
 
 .menu .icons {

@@ -47,7 +47,7 @@
     │                                     CSS                                      │
     ╰──────────────────────────────────────────────────────────────────────────────╯
     -->
-    <link rel="stylesheet" href="style/init.css"/>
+    <link rel="stylesheet" href="style/init.css" />
     <link rel="stylesheet" href="style/nav-bottom.css" />
     <link rel="stylesheet" href="style/swiper.css" />
     <!-- My Icons -->
@@ -95,10 +95,10 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide"><img src="img/aston-martin.jpg" alt="" /></div>
-              <div class="swiper-slide"><img src="img/audi-rs-e-tron-gt.jpg" alt="" /></div>
-              <div class="swiper-slide"><img src="img/maserati-mc20.jpg" alt="" /></div>
-              <div class="swiper-slide"><img src="img/nio-et5.jpg" alt="" /></div>
+              <div class="swiper-slide"><img src="source/img/uc.png" alt="" /></div>
+              <div class="swiper-slide"><img src="source/img/uc.png" alt="" /></div>
+              <div class="swiper-slide"><img src="source/img/uc.png" alt="" /></div>
+              <div class="swiper-slide"><img src="source/img/uc.png" alt="" /></div>
             </div>
             <!-- If we need pagination
             <div class="swiper-pagination"></div> -->
@@ -140,47 +140,5 @@
   <!-- JS Swiper On https://swiperjs.com/get-started in CDN -->
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-  <script>
-    // Fungsi Icons
-    const swiper = new Swiper(".swiper", {
-      // Optional parameters
-      // direction: 'vertical', /* Ini harus dihapus */
-      /* Membuat gambar berpindah sendiri selama waktu yang ditentukan delay. */
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-      loop: true,
-
-      // If we need pagination
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true /* Untuk bisa mengeklik lingkaran dibawah gambar */,
-      },
-
-      // Navigation arrows
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      // And if we need scrollbar /* Bagian ini dihapus karena kita tidak memerlukan Scroll bar */
-      // scrollbar: {
-      //   el: ".swiper-scrollbar",
-      // },
-    });
-
-    // fungsi Icons
-    const icons = document.querySelectorAll(".icons");
-
-    icons.forEach((i) => {
-      i.addEventListener("click", () => {
-        i.classList.toggle("icons-up");
-        setTimeout(() => {
-          if (i.classList.contains("icons-up")) {
-            i.classList.remove("icons-up");
-          }
-        }, 1000);
-      });
-    });
-  </script>
+  <script src="script/script.js"></script>
 </html>

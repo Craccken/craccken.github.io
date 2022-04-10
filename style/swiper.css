@@ -14,7 +14,7 @@
 }
 
 .swiper {
-  width: 60%;
+  width: calc(15vw + 7%);
   height: fit-content;
 }
 .swiper hr {
