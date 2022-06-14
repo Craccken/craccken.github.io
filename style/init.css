@@ -104,13 +104,15 @@ nav .list li a:hover {
 }
 
 header {
-  height: 100vh;
-  background: url(../source/img/craccken-preview.svg);
+  min-height: 100vh;
+  background-image: url(../source/img/craccken-preview.svg);
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat; /* Specifies how background images are tiled after they have been sized and positioned. */
   background-size: 2000px;
+  box-shadow:0 0 20px rgba(0,0,0,.5),inset 0 -8px rgba(0,0,0,.3);
   z-index: 1;
   display: flex;
+  margin: auto;
   justify-content: center;
   align-items: center;
 }
