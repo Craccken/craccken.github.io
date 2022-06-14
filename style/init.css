@@ -1,6 +1,38 @@
 /* 
  * vim:sts=2 ts=2 sw=2
  */
+/* ╭──────────────────────────────────────────────────────────────────────────────╮
+   │                                     FONT                                     │
+   ╰──────────────────────────────────────────────────────────────────────────────╯ */
+@font-face {
+  font-family: "Cozette"; /* Define the name of the font */
+  src: url("../source/font/CozetteVector.ttf"); /* Defines the URL(s) where the font should be downloaded from */
+}
+@font-face {
+  font-family: "RealityHyper"; /* Define the name of the font */
+  src: url("../source/font/Reality_Hyper_Regular.ttf"); /* Defines the URL(s) where the font should be downloaded from */
+}
+@font-face {
+  font-family: "BebasNeue"; /* Define the name of the font */
+  src: url("../source/font/BebasNeue-Regular.woff2"); /* Defines the URL(s) where the font should be downloaded from */
+}
+@font-face {
+  font-family: "SpacePort"; /* Define the name of the font */
+  src: url("../source/font/Spaceport_2006.otf"); /* Defines the URL(s) where the font should be downloaded from */
+}
+@font-face {
+  font-family: "Azonix"; /* Define the name of the font */
+  src: url("../source/font/Azonix.otf"); /* Defines the URL(s) where the font should be downloaded from */
+}
+@font-face {
+  font-family: "RobotoRegular"; /* Define the name of the font */
+  src: url("../source/font/Roboto-Regular.ttf"); /* Defines the URL(s) where the font should be downloaded from */
+}
+@font-face {
+  font-family: "AllerRegular"; /* Define the name of the font */
+  src: url("../source/font/Aller_Rg.ttf"); /* Defines the URL(s) where the font should be downloaded from */
+}
+
 :root {
   /* Represent an element that is the root of document */
   --text-color: #dadada;
@@ -9,19 +41,9 @@
   --background-color: #000000;
 }
 
-@font-face {
-  font-family: "Cozette"; /* Define the name of the font */
-  src: url("../source/font/CozetteVector.ttf"); /* Defines the URL(s) where the font should be downloaded from */
-}
-
-@font-face {
-  font-family: "Alkhemikal"; /* Define the name of the font */
-  src: url("../source/font/Alkhemikal.ttf"); /* Defines the URL(s) where the font should be downloaded from */
-}
-
 html {
   font-size: 1.1rem; /* Set the size of the font */
-  font-family: "Cozette"; /* Set font are used for text */
+  font-family: "AllerRegular"; /* Set font are used for text */
   background-color: var(--background-color); /* Set the background-color */
 }
 
@@ -45,9 +67,10 @@ header {
 header h1 {
   top: 0;
   left: 0;
+  margin: 0;
   text-align: start;
   font-size: 2.2em; /* Set the size of the font */
-  font-family: "Alkhemikal"; /* Set font are used for text */
+  font-family: "BebasNeue"; /* Set font are used for text */
   background: linear-gradient(140deg, #aa0000 0%, #d70000 100%);
   position: relative;
   background-clip: text;

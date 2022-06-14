@@ -4,6 +4,11 @@
 <!-- Help browser to understand the version of HTML the document is written in for better interpretability -->
 <html lang="en">
   <head>
+    <!-- 
+    ╭──────────────────────────────────────────────────────────────────────────────╮
+    │                                   META TAG                                   │
+    ╰──────────────────────────────────────────────────────────────────────────────╯
+    -->
     <!-- Specifies the character encoding for the HTML -->
     <meta charset="UTF-8" />
     <!-- Specifies the name of the web application that page is represents. -->
@@ -12,6 +17,8 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <!-- Set color for status bar and address bar in meta tag (android) -->
     <meta name="theme-color" content="#050505" />
+    <!-- Force IE 8/9/10 to use its latest rendering engine -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Set up website to have an application shortcut icon added to a device homescreen and the app launch in full-screen "app-mode" (IOS) -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <!-- Set color for status bar and address bar in meta tag (IOS) -->
@@ -36,6 +43,10 @@
     <meta name="keywords" content="Linux, Arch, Craccken, Technology" />
     <!-- Do not offer translations of this page in search results -->
     <meta name="robots" content="notranslate" />
+    <!-- Gives a general age rating based on the document's content -->
+    <meta name="rating" content="General">
+    <!-- Prevent people from saving things from website -->
+    <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website ;P">
     <!-- Controls the viewport (the user's visible area of web page), "width" sets the width to follow the screen-width, "initial-scale" sets the initial zoom level when page is fist loaded-->
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!-- Define title of the web page -->
@@ -50,6 +61,7 @@
     <link rel="stylesheet" href="style/init.css" />
     <link rel="stylesheet" href="style/nav-bottom.css" />
     <link rel="stylesheet" href="style/swiper.css" />
+    <link rel="stylesheet" href="style/glitch-text.css" />
     <!-- My Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
     <!-- My Swiper on https://swiperjs.com/get-started in CDN-->
@@ -60,7 +72,7 @@
     <main>
       <!-- This elements represents introductory content for its nearest ancestor sectioning content or sectioning root element -->
       <header>
-        <h1>CRACCKEN LINUX</h1>
+        <h2 class="glitch-style glitch-effect glitch-layers" data-text="Craccken"><span>Craccken</span></h2>
         <ul class="list">
           <li><a href="#home">Home</a></li>
           <li><a href="#download">Download</a></li>
@@ -68,6 +80,7 @@
         </ul>
       </header>
       <hr />
+
       <div class="Features">
         <!-- Create group elements -->
         <h2>Features</h2>
@@ -137,6 +150,7 @@
       </div>
     </main>
   </body>
+  <!-- REQ: JS Swiper On https://swiperjs.com/get-started in CDN -->
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="script/script.js"></script>
 </html>
