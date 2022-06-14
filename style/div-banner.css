@@ -1,5 +1,4 @@
 #banner-logo {
-  filter: drop-shadow(20px 20px 50px #ff0000);
-  width: 83%;
-  /* display: block; */
+  filter: drop-shadow(20px 20px 50px #ff0000); /* Processes an element’s rendering before it is displayed in the document, by applying one or more filter effects. */
+  width: 83%; /* Specifies the width of the content area, padding area or border area (depending on 'box-sizing') of certain boxes. */
 }

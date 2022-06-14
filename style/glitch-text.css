@@ -36,12 +36,12 @@
 .glitch-layers::before {
   top: 10px;
   left: 15px;
-  color: #e0287d;
+  color: var(--glitch-foreground-2);
 }
 .glitch-layers::after {
   top: 5px;
   left: -10px;
-  color: #1bc7fb;
+  color: var(--glitch-foreground-1);
 }
 /* ╭──────────────────────────────────────────────────────────────────────────────╮
    │                                    EFFECT                                    │
@@ -171,7 +171,7 @@
   }
   90% {
     font-weight: 500;
-    color: var(glitch-foreground-2);
+    color: var(--glitch-foreground-2);
     filter: blur(6px);
   }
 }
