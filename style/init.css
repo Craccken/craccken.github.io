@@ -108,7 +108,7 @@ header {
   background: url(../source/img/craccken-preview.svg);
   background-position: center;
   background-repeat: repeat;
-  background-size: 1500px;
+  background-size: 2000px;
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -179,4 +179,13 @@ footer {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+}
+
+@media (width > 2000px) and (width < 3000px) {
+  header {
+    background-size: 3000px;
+  }
+  .sub-text {
+    color: blue;
+  }
 }
