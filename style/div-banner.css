@@ -1,0 +1,7 @@
+#banner-logo {
+    filter: drop-shadow(0px 1px 20px #ff0000);
+    width: 23%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

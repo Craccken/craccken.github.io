@@ -109,21 +109,3 @@ footer {
   align-items: center;
   margin-bottom: 30px;
 }
-
-footer a {
-  margin-right: 10px;
-  margin-left: 10px;
-  text-decoration: none; /* This Property is used to set or remove decorations from text */
-  color: var(--link-color); /* Set foreground color */
-  font-size: 1.5em; /* Set the size of the font */
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-footer a:hover {
-  color: var(--link-color--hover); /* Set foreground color */
-}
-
-footer a:active {
-  opacity: 0.5; /* Set transparency */
-}
