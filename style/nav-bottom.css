@@ -18,7 +18,7 @@
   .menu {
     display: flex;
   }
-  header .list {
+  nav .list {
     display: none;
   }
   footer {
@@ -27,9 +27,28 @@
   .Preview .container {
     height: 50vh;
   }
-  /* .Preview .swiper {
-    width: 80%;
-  } */
+  .jumbotron {
+    margin: 40px 0;
+    display: grid;
+    place-content: center;
+  }
+  .jumbotron #banner-logo {
+    margin-left: 15%;
+    /* background-color: red; */
+    width: 70%;
+  }
+  .sub-text {
+    text-align: center;
+    /* background-color: red; */
+    width: 100%;
+  }
+  .sub-text h2 {
+    font-size: 1.4em;
+  }
+  .sub-text h3 {
+    font-weight: 400;
+    font-size: 0.8em;
+  }
 }
 
 .menu .icons {

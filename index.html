@@ -18,7 +18,7 @@
     <!-- Set color for status bar and address bar in meta tag (android) -->
     <meta name="theme-color" content="#050505" />
     <!-- Force IE 8/9/10 to use its latest rendering engine -->
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <!-- Set up website to have an application shortcut icon added to a device homescreen and the app launch in full-screen "app-mode" (IOS) -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <!-- Set color for status bar and address bar in meta tag (IOS) -->
@@ -44,9 +44,9 @@
     <!-- Do not offer translations of this page in search results -->
     <meta name="robots" content="notranslate" />
     <!-- Gives a general age rating based on the document's content -->
-    <meta name="rating" content="General">
+    <meta name="rating" content="General" />
     <!-- Prevent people from saving things from website -->
-    <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website ;P">
+    <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website ;P" />
     <!-- Controls the viewport (the user's visible area of web page), "width" sets the width to follow the screen-width, "initial-scale" sets the initial zoom level when page is fist loaded-->
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!-- Define title of the web page -->
@@ -58,47 +58,56 @@
     │                                     CSS                                      │
     ╰──────────────────────────────────────────────────────────────────────────────╯
     -->
-    <link rel="stylesheet" href="style/init.css"/>
-    <link rel="stylesheet" href="style/nav-bottom.css"/>
-    <link rel="stylesheet" href="style/swiper.css"/>
-    <link rel="stylesheet" href="style/glitch-text.css"/>
-    <link rel="stylesheet" href="style/html-link_style.css"/>
-    <link rel="stylesheet" href="style/div-banner.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style/init.css" />
+    <link rel="stylesheet" href="style/nav-bottom.css" />
+    <link rel="stylesheet" href="style/swiper.css" />
+    <link rel="stylesheet" href="style/glitch-text.css" />
+    <link rel="stylesheet" href="style/html-link_style.css" />
+    <link rel="stylesheet" href="style/div-banner.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   </head>
   <body>
     <!-- This elements contains the MAIN CONTENT of the page -->
     <main>
-      <!-- This elements represents introductory content for its nearest ancestor sectioning content or sectioning root element -->
       <header>
-        <ul class="list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#download">Download</a></li>
-          <li><a href="#about">Blog</a></li>
-        </ul>
+        <!-- This elements represents introductory content for its nearest ancestor sectioning content or sectioning root element -->
+        <nav>
+          <ul class="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#about">Blog</a></li>
+          </ul>
+        </nav>
+        <div class="jumbotron">
+          <img id="banner-logo" src="source/img/craccken-badge-2.svg" />
+          <div class="sub-text">
+            <h2 class="glitch-style glitch-effect glitch-layers" data-text="Craccken"><span>Craccken</span></h2>
+            <h3>Collection of open-source projects that we created</h3>
+          </div>
+        </div>
+        <!-- <hr /> -->
       </header>
-      <img id="banner-logo" src="source/img/craccken-badge.svg"/>
-      <h2 class="glitch-style glitch-effect glitch-layers" data-text="Craccken"><span>Craccken</span></h2>
-      <hr />
-      <div class="Features">
-        <!-- Create group elements -->
-        <h2>Features</h2>
-        <ul>
-          <li>Built-in with powerful tools</li>
-          <li>Beautiful UI</li>
-          <li>Fast and versatile</li>
-          <li>Super configured ZSH</li>
-          <li>
-            Manage configuration make easy with <b><abbr title="Tools for edit custom configurations you can edit it in /etc/zsh/functions/edit_configuration">edit-configuration</abbr></b> tools
-          </li>
-          <li>Built-in with live-wallpaper</li>
-          <li>Super configured <b>NEOVIM</b></li>
-          <li>PipeWire as default media server</li>
-          <li>Wayland as default display server</li>
-        </ul>
+      <div class="features">
+        <div class="card">
+          <!-- Create group elements -->
+          <h2>Features</h2>
+          <ul>
+            <li>Built-in with powerful tools</li>
+            <li>Beautiful UI</li>
+            <li>Fast and versatile</li>
+            <li>Super configured ZSH</li>
+            <li>
+              Manage configuration make easy with <b><abbr title="Tools for edit custom configurations you can edit it in /etc/zsh/functions/edit_configuration">edit-configuration</abbr></b> tools
+            </li>
+            <li>Built-in with live-wallpaper</li>
+            <li>Super configured <b>NEOVIM</b></li>
+            <li>PipeWire as default media server</li>
+            <li>Wayland as default display server</li>
+          </ul>
+        </div>
       </div>
-      <hr/>
+      <!-- <hr /> -->
       <div class="Preview">
         <!-- Create group elements -->
         <h2>Preview</h2>
@@ -127,7 +136,7 @@
           </div>
         </div>
       </div>
-      <hr/>
+      <hr />
       <footer>
         <!-- This elements represents a end for its nearest ancestor sectioning content or sectioning root element -->
         <a href="https://github.com/Craccken/craccken.github.io" target="_blank" rel="noopener noreferrer">Source</a>
