@@ -30,26 +30,26 @@
   .Preview .container {
     height: 50vh;
   }
-  .jumbotron {
+  div.banner {
     margin: 40px 0;
     display: grid;
     place-content: center;
   }
-  .jumbotron #banner-logo {
+  div.banner #banner-logo {
     margin-left: 15%;
     /* background-color: red; */
     width: 70%;
   }
-  .sub-text {
+  div.banner-text {
     text-align: center;
     /* background-color: red; */
     width: 100%;
     margin-left: 0;
   }
-  .sub-text h2 {
+  div.banner-text h2 {
     font-size: 1.4em;
   }
-  .sub-text h3 {
+  div.banner-text p {
     font-weight: 400;
     font-size: 0.8em;
   }
