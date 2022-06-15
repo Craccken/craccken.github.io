@@ -1,6 +1,9 @@
 /* 
  * vim:sts=2 ts=2 sw=2
  */
+/* ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+   ┃              THIS IS FILE INTENDED TO STORE STYLE FOR HTML TAG               ┃
+   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛ */
 /* ╭──────────────────────────────────────────────────────────────────────────────╮
    │                                     FONT                                     │
    ╰──────────────────────────────────────────────────────────────────────────────╯ */
@@ -32,9 +35,10 @@
   font-family: "AllerRegular"; /* Define the name of the font */
   src: url("../source/font/Aller_Rg.ttf"); /* Defines the URL(s) where the font should be downloaded from */
 }
-
-:root {
-  /* Represent an element that is the root of document */
+/* ╭──────────────────────────────────────────────────────────────────────────────╮
+   │                                   VARIABLE                                   │
+   ╰──────────────────────────────────────────────────────────────────────────────╯ */
+:root { /* Represent an element that is the root of document */
   --text-color: #dadada;
   --link-color: #eaeaea;
   --link-color--hover: #d70000;
@@ -103,18 +107,17 @@ nav .list li a:hover {
   color: var(--link-color--hover);
 }
 
-header {
-  height: 100vh;
-  background: url(../source/img/craccken-preview.svg);
-  background-position: center;
-  background-repeat: repeat;
-  background-size: 2000px;
+header { /* Set style for header tag */
+  min-height: 100vh; /* Allows authors to constrain content height to a certain range. */
+  background-image: url(../source/img/craccken-preview.svg); /* Sets the background image(s) of an element. */
+  background-position: center; /* Specifies the initial position of the background image(s) (after any resizing) within their corresponding background positioning area. */
+  background-repeat: no-repeat; /* Specifies how background images are tiled after they have been sized and positioned. <repeat | no-repeat> */
   z-index: 1;
-  display: flex;
-  justify-content: center;
+  display: flex; /* In combination with 'float' and 'position', determines the type of box or boxes that are generated for an element. */
+  margin: auto; /* Shorthand property to set values for the thickness of the margin area. */
+  justify-content: center; /* Aligns flex items along the main axis of the current line of the flex container. */
   align-items: center;
 }
-
 header::before {
   position: absolute;
   background-color: #9f0027;
@@ -126,21 +129,6 @@ header::before {
   opacity: 0.4;
   z-index: 0;
 }
-
-.jumbotron {
-  position: relative;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.sub-text {
-  margin-left: 20px;
-}
-.sub-text h3 {
-  font-weight: 400;
-}
-
 .features {
   padding-top: 80px;
   background-color: #000;
@@ -152,7 +140,6 @@ header::before {
   justify-content: center;
   align-items: center;
 }
-
 .card {
   background-color: #000;
   width: 100%;
@@ -168,19 +155,16 @@ header::before {
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
 }
-
 .Preview h2 {
   text-align: center;
   margin-bottom: 0px;
 }
-
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
-
 @media (width > 2000px) and (width < 3000px) {
   header {
     background-size: 3000px;
