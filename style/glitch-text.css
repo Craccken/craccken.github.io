@@ -13,7 +13,7 @@
    │                                    STYLE                                     │
    ╰──────────────────────────────────────────────────────────────────────────────╯ */
 .glitch-style {
-  font-size: clamp(40px, 1vw, 100px);
+  font-size: clamp(40px, 1vw, 100px); /* Indicates the desired height of glyphs from the font */
   font-family: "SpacePort"; /* Set font are used for text */
   line-height: 1; /* Determines the block-progression dimension of the text content area of an inline box. */
   display: inline-block; /* In combination with 'float' and 'position', determines the type of box or boxes that are generated for an element\. */
@@ -21,6 +21,7 @@
   color: var(--primary-foreground); /* Sets the color of an element's text */
   z-index: 2; /* For a positioned box, the 'z-index' property specifies the stack level of the box in the current stacking context and whether the box establishes a local stacking context. */
   letter-spacing: 0px; /* Specifies the minimum, maximum, and optimal spacing between grapheme clusters. */
+  filter: drop-shadow(0 1px 3px); /* Glow effect on text */
 }
 /* ╭──────────────────────────────────────────────────────────────────────────────╮
    │                                    LAYER                                     │
