@@ -40,8 +40,6 @@
    ╰──────────────────────────────────────────────────────────────────────────────╯ */
 :root { /* Represent an element that is the root of document */
   --text-color: #dadada;
-  --link-color: #eaeaea;
-  --link-color--hover: #d70000;
   --background-color: #000000;
 }
 
@@ -101,10 +99,6 @@ nav .list li a {
   text-decoration: none;
   color: var(--text-color);
   transition: all 0.2s ease;
-}
-
-nav .list li a:hover {
-  color: var(--link-color--hover);
 }
 
 header { /* Set style for header tag */
