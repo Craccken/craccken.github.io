@@ -20,6 +20,7 @@
     <meta name="theme-color" content="#050505" />
     <!-- Force IE 8/9/10 to use its latest rendering engine -->
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta http-equiv="cache-control" content="public, max-age=31536000, must-revalidate"> <!-- The Cache-Control HTTP header field holds directives (instructions) — in both requests and responses — that control caching in browsers and shared caches (e.g. Proxies, CDNs). -->
     <!-- Set up website to have an application shortcut icon added to a device homescreen and the app launch in full-screen "app-mode" (IOS) -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <!-- Set color for status bar and address bar in meta tag (IOS) -->
@@ -59,12 +60,12 @@
     │                                     CSS                                      │
     ╰──────────────────────────────────────────────────────────────────────────────╯
     -->
-    <link rel="stylesheet" href="style/init.css" />
-    <link rel="stylesheet" href="style/nav-bottom.css" />
-    <link rel="stylesheet" href="style/swiper.css" />
-    <link rel="stylesheet" href="style/glitch-text.css" />
-    <link rel="stylesheet" href="style/html/link-style.css" />
-    <link rel="stylesheet" href="style/banner-section.css" />
+    <link rel="preload" href="style/init.css" as="style"/>
+    <link rel="preload" href="style/nav-bottom.css" as="style"/>
+    <link rel="preload" href="style/swiper.css" as="style"/>
+    <link rel="preload" href="style/glitch-text.css" as="style"/>
+    <link rel="preload" href="style/html/link-style.css" as="style"/>
+    <link rel="preload" href="style/banner-section.css" as="style"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   </head>
@@ -79,7 +80,7 @@
         </ul>
       </nav>
       <div class="banner">
-        <img id="banner-logo" src="source/img/craccken-badge.svg" />
+        <img alt="craccken-badge" id="banner-logo" src="source/img/craccken-badge.webp" />
         <!-- LOGO -->
         <div class="banner-text">
           <!-- Banner text section-layer -->
