@@ -110,7 +110,7 @@ nav .list li a {
 
 header { /* Set style for header tag */
   min-height: 100vh; /* Allows authors to constrain content height to a certain range. */
-  background-image: url(../source/img/craccken-preview.svg); /* Sets the background image(s) of an element. */
+  background-image: url(../source/img/craccken-preview.webp); /* Sets the background image(s) of an element. */
   background-position: center; /* Specifies the initial position of the background image(s) (after any resizing) within their corresponding background positioning area. */
   background-repeat: no-repeat; /* Specifies how background images are tiled after they have been sized and positioned. <repeat | no-repeat> */
   z-index: 1;
