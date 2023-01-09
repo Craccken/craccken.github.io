@@ -1,0 +1,59 @@
+.btn {
+ --border-color: #b3b1ad;
+ --border-width: 0.125em;
+ --curve-size: 1em;
+ --blur: 30px;
+ --bg: #080312;
+ --color: #0d1117;
+ color: var(--color);
+ background-color: var(--border-color);
+ cursor: none;
+ /* use position: relative; so that BG is only for .btn */
+ position: relative;
+ isolation: isolate;
+ display: inline-grid;
+ place-content: center;
+ padding: 1.2em 4em;
+ font-size: 0.8em;
+ font-family: "Montserrat";
+ font-weight: 700;
+ letter-spacing: 0.05em;
+ border: 0;
+ text-transform: uppercase;
+ box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+ clip-path: polygon(
+  /* Top-left */ 0% var(--curve-size),
+  var(--curve-size) 0,
+  /* top-right */ 100% 0,
+  100% calc(100% - var(--curve-size)),
+  /* bottom-right 1 */ calc(100% - var(--curve-size)) 100%,
+  /* bottom-right 2 */ 0 100%
+ );
+ transition: color 250ms;
+}
+
+.btn::before {
+ content: "";
+ border: none;
+ position: absolute;
+ top: 0px;
+ bottom: 0px;
+ right: 250px;
+ left: -50px;
+ background-color: #0d1117;
+ /* width: 200px; */
+ height: 200px;
+ /* opacity: 0; */
+ z-index: -1;
+ transform: skew(-15deg);
+ transition: all 0.3s ease;
+}
+
+.btn:hover {
+ color: #b3b1ad;
+}
+/* jika button di hover maka yang bereaksi adalah before dari button nya */
+button:hover::before {
+ opacity: 1;
+ right: -10px;
+}

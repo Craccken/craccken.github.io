@@ -1,0 +1,340 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+::selection {
+ color: #040507;
+ background-color: #e7c547;
+}
+
+@font-face {
+ font-family: "Suboleya";
+ src: url("../font/SuboleyaRegular-qZeV1.ttf") format("truetype");
+}
+@font-face {
+ font-family: "Nerd_font";
+ src: url("../font/3270-Medium\ Nerd\ Font\ Complete.ttf") format("truetype");
+}
+
+body {
+ background-image: linear-gradient(
+   to bottom,
+   rgba(1, 2, 4, 0.9) 0.01%,
+   rgba(1, 4, 9, 0.9) 25.95%,
+   rgba(1, 4, 9, 0.9) 100%
+  ),
+  url("../assets/batik.jpg");
+ height: 2000px;
+ width: 100%;
+ cursor: none;
+
+ background-color: #040507;
+ color: #b3b1ad;
+}
+
+.header {
+ width: 100%;
+ height: 100vh;
+ display: grid;
+ place-items: center;
+}
+
+.banner-jumbotron {
+ /* -webkit-text-stroke: 2px white; */
+ font-weight: bolder;
+ font-family: "Montserrat";
+ font-size: 10em;
+ color: #0d1117;
+ transform: rotate(90deg);
+ opacity: 0.3;
+ height: 100%;
+ position: absolute;
+ top: 0%;
+ left: 35%;
+}
+
+.jumbotron {
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.jumbotron .banner-text {
+ letter-spacing: 2px;
+ font-size: 2rem;
+ font-family: "Suboleya";
+}
+
+.jumbotron > .banner-text > h6 {
+ letter-spacing: 1px;
+ text-align: center;
+ font-weight: 300;
+ font-size: 0.7rem;
+ font-family: "Montserrat";
+}
+
+.separator {
+ width: 100%;
+ position: absolute;
+ top: 110%;
+ left: 0%;
+}
+
+.horizontal-separator {
+ position: absolute;
+ top: 0%;
+ right: 90%;
+ height: 825px;
+}
+
+.bintik {
+ width: 4%;
+ position: absolute;
+ top: 95%;
+ left: 48%;
+}
+
+.tanda {
+ width: 10px;
+ position: absolute;
+ top: 50%;
+ right: 2%;
+}
+
+.container {
+ height: fit-content;
+}
+
+.container .isi {
+ /* background-color: red; */
+ margin: auto;
+ margin-top: 120px;
+ padding: 20px;
+ width: 95%;
+ height: 900px;
+ display: flex;
+ justify-content: space-between;
+ align-self: center;
+}
+
+.tanda2 {
+ width: 10px;
+ position: absolute;
+ top: 171%;
+ left: 2%;
+ transform: rotate(-180deg);
+}
+
+.isi .gambar {
+ width: 50%;
+}
+
+.isi .gambar img {
+ margin-bottom: 140px;
+ width: 90%;
+}
+
+.features-jumbotron {
+ transform: rotate(-90deg);
+
+ height: 0px;
+ position: absolute;
+ top: 170%;
+ left: 20%;
+
+ font-size: 10em;
+ font-weight: bolder;
+ font-family: "Montserrat";
+ font-size: 8.5em;
+ color: #0d1117;
+ opacity: 0.3;
+}
+
+.quotes {
+ /* background-color: yellow; */
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ width: 100%;
+ height: 230px;
+}
+
+.quotes p {
+ font-family: "Montserrat";
+ text-transform: uppercase;
+ font-style: normal;
+ font-weight: 600;
+ font-size: 12px;
+ line-height: 15px;
+ letter-spacing: 0.25em;
+}
+
+.quotes .underline {
+ height: 4px;
+ width: 53%;
+ margin-top: 10px;
+ background-color: #b3b1ad;
+}
+
+.isi > .features {
+ /* background-color: blue; */
+ width: 35%;
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+
+ height: 100%;
+}
+
+.header-features {
+ text-align: center;
+}
+
+.header-features h1 {
+ letter-spacing: 0.03em;
+}
+
+.header-features .text {
+ margin: auto;
+
+ color: #b3b1ad;
+ text-align: center;
+ font-weight: 400;
+
+ width: 80%;
+}
+
+.features .header-features h1 {
+ text-transform: uppercase;
+ font-family: "Montserrat";
+ font-weight: 600;
+ font-size: 2.5em;
+}
+
+.features .header-features span {
+ font-size: 0.8rem;
+ font-family: "Montserrat";
+}
+
+.content {
+ /* background-color: green; */
+ width: 80%;
+ height: 400px;
+ margin-top: 100px;
+ margin-inline: auto;
+
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ text-align: center;
+
+ font-family: "Montserrat";
+}
+
+.content h2 {
+ margin-bottom: 5px;
+
+ font-size: 1.1em;
+ text-transform: uppercase;
+}
+
+.content p {
+ color: rgba(179, 177, 173, 0.6);
+ font-size: 0.8em;
+ font-weight: 400;
+}
+
+.aesthetic {
+ width: 100%;
+}
+
+.open-source {
+ width: 100%;
+}
+
+.separator2 {
+ text-align: center;
+ margin-top: 40px;
+ width: 100%;
+}
+
+footer {
+ background: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0) 0%,
+  rgba(255, 255, 255, 0.03) 100%
+ );
+ width: 100%;
+ height: 100px;
+ margin-top: 80px;
+ /* margin-bottom: 60px; */
+}
+
+footer .icons {
+ /* background-color: red; */
+ display: flex;
+ justify-content: space-between;
+ margin-inline: auto;
+ padding: 20px;
+ width: 250px;
+}
+
+.icons img {
+ width: 40px;
+}
+
+.icons img.linuk {
+ width: 35px;
+}
+
+@media screen and (max-width: 512px) {
+ div.jumbotron {
+  display: grid;
+ }
+ .jumbotron div.banner {
+  margin-inline: auto;
+ }
+ .banner-jumbotron {
+  display: none;
+ }
+ .features-jumbotron {
+  display: none;
+ }
+ .horizontal-separator {
+  display: none;
+ }
+
+ .container div.isi {
+  margin-inline: auto;
+  height: fit-content;
+  display: grid;
+ }
+ .isi div.gambar {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin-bottom: 80px;
+ }
+ .isi div.gambar img {
+  margin-top: 20px;
+  margin-bottom: 0px;
+ }
+
+ .isi div.features {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .isi img.tanda2 {
+  position: absolute;
+  top: 145vh;
+  left: 2%;
+  transform: rotate(-180deg);
+ }
+}

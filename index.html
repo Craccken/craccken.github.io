@@ -1,154 +1,94 @@
 <!DOCTYPE html>
-<!-- Help browser to understand the version of HTML the document is written in for better interpretability -->
 <html lang="en">
-  <head>
-    <!-- The head element represents a collection of metadata for the Document. -->
-    <!-- 
-    ╭──────────────────────────────────────────────────────────────────────────────╮
-    │                                   META TAG                                   │
-    ╰──────────────────────────────────────────────────────────────────────────────╯
-    -->
-    <!-- Specifies the character encoding for the HTML -->
-    <meta charset="UTF-8" />
-    <!-- Specifies the name of the web application that page is represents. -->
-    <meta name="application-name" content="Craccken Linux" />
-    <!-- Set up website to have an application shortcut icon added to a device homescreen and the app launch in full-screen "app-mode" (android) -->
-    <meta name="mobile-web-app-capable" content="yes" />
-    <!-- Set color for status bar and address bar in meta tag (android) -->
-    <meta name="theme-color" content="#050505" />
-    <!-- Force IE 8/9/10 to use its latest rendering engine -->
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta http-equiv="cache-control" content="public, max-age=31536000, must-revalidate"> <!-- The Cache-Control HTTP header field holds directives (instructions) — in both requests and responses — that control caching in browsers and shared caches (e.g. Proxies, CDNs). -->
-    <!-- Set up website to have an application shortcut icon added to a device homescreen and the app launch in full-screen "app-mode" (IOS) -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <!-- Set color for status bar and address bar in meta tag (IOS) -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#050505" />
-    <!-- Set the author of the page -->
-    <meta name="author" content="Craccken" />
-    <!-- Set the description of the page -->
-    <meta name="description" content="Craccken linux an Arch based, minimal focused linux distro" />
-    <!-- Define open-graph title -->
-    <meta name="og:title" content="Craccken - Flexibility focused linux distro" />
-    <!-- Define the content language -->
-    <meta name="og:locale" content="en_US" />
-    <!-- Define name of overall website content -->
-    <meta name="og:site_name" content="Craccken" />
-    <!-- Define open-graph description of the content -->
-    <meta name="og:description" content="Flexibility and focused linux distro, with builtin tools-installer." />
-    <!-- Define the url of the content -->
-    <meta name="og:url" content="https://craccken.github.io" />
-    <!-- Define type of object sharing -->
-    <meta name="og:type" content="Technology" />
-    <!-- Set keywords for search engines (comma-separated) -->
-    <meta name="keywords" content="Linux, Arch, Craccken, Technology" />
-    <!-- Do not offer translations of this page in search results -->
-    <meta name="robots" content="notranslate" />
-    <!-- Gives a general age rating based on the document's content -->
-    <meta name="rating" content="General" />
-    <!-- Prevent people from saving things from website -->
-    <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website ;P" />
-    <!-- Controls the viewport (the user's visible area of web page), "width" sets the width to follow the screen-width, "initial-scale" sets the initial zoom level when page is fist loaded-->
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <!-- Define title of the web page -->
-    <title>Craccken Linux</title>
-    <!-- Set favicons of the page -->
-    <link rel="icon" href="source/favicons.png" type="image/png" />
-    <!-- 
-    ╭──────────────────────────────────────────────────────────────────────────────╮
-    │                                     CSS                                      │
-    ╰──────────────────────────────────────────────────────────────────────────────╯
-    -->
-    <link rel="stylesheet" href="style/init.css">
-    <link rel="stylesheet" href="style/nav-bottom.css">
-    <link rel="stylesheet" href="style/swiper.css">
-    <link rel="stylesheet" href="style/glitch-text.css">
-    <link rel="stylesheet" href="style/html/link-style.css">
-    <link rel="stylesheet" href="style/banner-section.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-  </head>
-  <body>
-    <header>
-      <!-- This elements represents introductory content for its nearest ancestor sectioning content or sectioning root element -->
-      <nav>
-        <ul class="list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="https://github.com/Craccken/craccken-linux">Download</a></li>
-          <li><a href="#about">Blog</a></li>
-        </ul>
-      </nav>
-      <div class="banner">
-        <img alt="craccken-badge" id="banner-logo" src="source/img/craccken-badge.webp" />
-        <!-- LOGO -->
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuraken</title>
+  <link rel="website icon" type="svg" href="https://raw.githubusercontent.com/Craccken/assets/main/logo/craccken-logo-red.svg">
+
+<!-- Font --> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@400;600&family=Poor+Story&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style/cursor.css" />
+  <link rel="stylesheet" href="style/button.css"> 
+ </head>
+ <body>
+  <div class="header">
+    <!-- <img src="assets/BANNER.png" alt=".." class="banner-jumbotron"> -->
+    <h1 class="banner-jumbotron">BANNER</h1>
+    <div class="jumbotron">
+      <img src="assets/Pembatas-lurus.svg" alt=".." class="horizontal-separator">
+        <div class="banner">
+            <img src="https://raw.githubusercontent.com/Craccken/assets/main/logo/craccken-logo-red.svg" width="200px"></img>
+        </div>
         <div class="banner-text">
-          <!-- Banner text section-layer -->
-          <h2 class="glitch-style glitch-effect glitch-layers" data-text="Craccken"><span>Craccken</span></h2>
-          <p>Collection of open-source projects that we created</p>
+            <h1>Craccken</h1>
+            <h6>Focus on creating futuristic like software.</h6>
         </div>
+    </div>
+    <img src="assets/garis.svg" alt=".." class="separator">
+    <img src="assets/Bintik.svg" alt=".." class="bintik">
+    <img src="assets/Tanda.svg" alt=".." class="tanda">
+  </div>
+  
+  <div class="container">
+    <div class="isi">
+      <h1 class="features-jumbotron">FEATURES</h1>
+      <img src="assets/Tanda.svg" alt=".." class="tanda2">
+      <div class="gambar">
+        <img src="assets/img1.png" alt=".." style="margin-top: 20px;">
+        <img src="assets/img2.png" alt="..">
       </div>
-    </header>
-    <!-- This elements contains the MAIN CONTENT of the page -->
-    <main>
-      <!-- The main element represents the main content of the body of a document or application -->
       <div class="features">
-        <div class="card">
-          <!-- Create group elements -->
-          <h2>Features</h2>
-          <ul>
-            <li>Built-in with powerful tools</li>
-            <li>Beautiful UI</li>
-            <li>Fast and versatile</li>
-            <li>Super configured ZSH</li>
-            <li>
-              Manage configuration make easy with <b><abbr title="Tools for edit custom configurations you can edit it in /etc/zsh/functions/edit_configuration">edit-configuration</abbr></b> tools
-            </li>
-            <li>Built-in with live-wallpaper</li>
-            <li>Super configured <b>NEOVIM</b></li>
-            <li>Wayland as default display server</li>
-            <li>PipeWire as default media server</li>
-          </ul>
-        </div>
-      </div>
-      <div class="Preview">
-        <!-- Create group elements -->
-        <h2>Preview</h2>
-        <div class="container">
-          <!-- Slider main container -->
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="source/img/uc.png" alt="" /></div>
-              <div class="swiper-slide"><img src="source/img/uc.png" alt="" /></div>
-              <div class="swiper-slide"><img src="source/img/uc.png" alt="" /></div>
-              <div class="swiper-slide"><img src="source/img/uc.png" alt="" /></div>
+        <div class="header-features">
+          <h1>Craccken Linux</h1>
+          <div class="text">
+            <span>Is a Linux distribution centered on futuristic themes. With exclusive builtin functions.</span>
+          </div>
+
+          <div class="content">
+            <div class="automation">
+              <h2>Automation</h2>
+              <p>With exclusive builtin functions from zsh, gives you power to automating your task, like dowloading random wallpaper and set it up automatically. <br>
+              You can create your own functions whatever you want.</p>
             </div>
+            <div class="aesthetic">
+              <h2>aesthetic</h2>
+              <p>With futuristic themes and consistency across all UI elements, make Craccken Linux look very aesthetic, clean and elegant-looking</p>
+            </div>
+            <div class="open-source">
+              <h2>open source</h2>
+              <p>Build with love and open source community.</p>
+            </div>
+            <div class="lightweight">
+              <h2>lightweight</h2>
+              <p>Craccken Linux can run under 600Mb of memory. It only uses lightweight applications and window managers.</p>
+            </div>
+          </div>
+          <div class="quotes">
+            <p>glory to almighty god</p>
+            <span class="underline"></span>
           </div>
         </div>
       </div>
-      <hr />
-      <div class="menu">
-        <div class="icons">
-          <!-- <i class="bx bx-home"></i> -->
-          <!-- <span><i class="bx bx-home"></i></span> -->
-        </div>
-        <div class="icons">
-          <!-- <i class="bx bx-chat"></i> -->
-          <!-- <span><i class="bx bx-chat"></i></span> -->
-        </div>
-        <div class="icons">
-          <!-- <i class="bx bx-user-circle"></i> -->
-          <!-- <span><i class="bx bx-user-circle"></i></span> -->
-        </div>
-      </div>
-    </main>
-    <footer>
-        <!-- This elements represents a end for its nearest ancestor sectioning content or sectioning root element -->
-        <a href="https://github.com/Craccken" target="_blank" rel="noopener noreferrer">Source</a>
-        <p>|</p>
-        <a href="mailto:Craccken@protonmail.com">Mail</a>
-    </footer>
-  </body>
-  <!-- REQ: JS Swiper On https://swiperjs.com/get-started in CDN -->
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="script/script.js"></script>
+    </div>
+    <center>
+      <button class="btn">Download</button>
+    </center>
+  <img src="assets/Pembatas2.svg" alt=".." class="separator2">
+  </div>
+  <footer>
+    <div class="icons">
+      <img src="assets/github.svg" alt="..">
+      <img src="assets/mail.svg" alt="..">
+      <img src="assets/linux.svg" alt=".." class="linuk">
+      <img src="assets/Flag_of_Indonesia.svg" alt=".." style="border-radius: 50%;">
+    </div>
+  </footer>
+  <div class="inner-cursor" id="inner-cursor"></div>
+ </body>
+ <script src="js/cursor.js"></script>
 </html>
