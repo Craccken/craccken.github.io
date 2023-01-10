@@ -8,3 +8,13 @@
  border-radius: 50%;
  z-index: 9999;
 }
+
+@media screen and (max-width: 512px) {
+ ::selection {
+  z-index: 9999999999;
+  cursor: default;
+ }
+ .inner-cursor {
+  display: none;
+ }
+}

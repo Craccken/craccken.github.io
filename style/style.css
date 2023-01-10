@@ -87,7 +87,7 @@ body {
  position: absolute;
  top: 0%;
  right: 90%;
- height: 825px;
+ height: calc(100vh + 15%);
 }
 
 .bintik {
@@ -129,7 +129,7 @@ body {
 }
 
 .isi .gambar {
- width: 50%;
+ width: clamp(500px, 75%, 600px);
 }
 
 .isi .gambar img {
@@ -175,7 +175,7 @@ body {
 
 .quotes .underline {
  height: 4px;
- width: 53%;
+ width: clamp(230px, 100%, 230px);
  margin-top: 10px;
  background-color: #b3b1ad;
 }
@@ -291,6 +291,18 @@ footer .icons {
  width: 35px;
 }
 
+@media screen and (height > 899px) {
+ .horizontal-separator {
+  height: calc(100vh + 14%);
+ }
+}
+
+@media screen and (height > 1399px) {
+ .horizontal-separator {
+  height: calc(100vh + 13%);
+ }
+}
+
 @media screen and (max-width: 512px) {
  div.jumbotron {
   display: grid;
@@ -336,5 +348,14 @@ footer .icons {
   top: 145vh;
   left: 2%;
   transform: rotate(-180deg);
+ }
+ .content > div {
+  margin-bottom: 40px;
+ }
+ .features div.header-features h1 {
+  font-size: 1.5em;
+ }
+ .features div.header-features div.text span {
+  font-size: 0.6em;
  }
 }
