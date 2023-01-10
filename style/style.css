@@ -2,6 +2,7 @@
  margin: 0;
  padding: 0;
  box-sizing: border-box;
+ text-decoration: none;
 }
 
 ::selection {
@@ -26,6 +27,8 @@ body {
    rgba(1, 4, 9, 0.9) 100%
   ),
   url("../assets/batik.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
  height: 2000px;
  width: 100%;
  cursor: none;
