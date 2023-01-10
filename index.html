@@ -1,21 +1,63 @@
 <!DOCTYPE html>
+<!-- Help browser to understand the version of HTML the document is written in for better interpretability -->
 <html lang="en">
- <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kuraken</title>
-  <link rel="website icon" type="svg" href="https://raw.githubusercontent.com/Craccken/assets/main/logo/craccken-logo-red.svg">
+  <head>
+    <!-- Specifies the character encoding for the HTML -->
+    <meta charset="UTF-8" />
+    <!-- Specifies the name of the web application that page is represents. -->
+    <meta name="application-name" content="Craccken" />
+    <!-- Set up website to have an application shortcut icon added to a device homescreen and the app launch in full-screen "app-mode" (android) -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- Set color for status bar and address bar in meta tag (android) -->
+    <meta name="theme-color" content="#000000" />
+    <!-- Force IE 8/9/10 to use its latest rendering engine -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <!-- The Cache-Control HTTP header field holds directives (instructions) — in both requests and responses — that control caching in browsers and shared caches (e.g. Proxies, CDNs). -->
+    <meta http-equiv="cache-control" content="public, max-age=31536000, must-revalidate"> 
+    <!-- Set up website to have an application shortcut icon added to a device homescreen and the app launch in full-screen "app-mode" (IOS) -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Set color for status bar and address bar in meta tag (IOS) -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
+    <!-- Set the author of the page -->
+    <meta name="author" content="Craccken Team" />
+    <!-- Set the description of the page -->
+    <meta name="description" content="Focus on creating futuristic like software." />
+    <!-- Define open-graph title -->
+    <meta name="og:title" content="Craccken - Glory to Almighty God" />
+    <!-- Define the content language -->
+    <meta name="og:locale" content="en_US" />
+    <!-- Define name of overall website content -->
+    <meta name="og:site_name" content="Craccken" />
+    <!-- Define open-graph description of the content -->
+    <meta name="og:description" content="Focus on creating futuristic like software." />
+    <!-- Define the url of the content -->
+    <meta name="og:url" content="https://craccken.github.io" />
+    <!-- Define type of object sharing -->
+    <meta name="og:type" content="Technology" />
+    <!-- Set keywords for search engines (comma-separated) -->
+    <meta name="keywords" content="Linux, Arch, Craccken, Technology" />
+    <!-- Do not offer translations of this page in search results -->
+    <meta name="robots" content="notranslate" />
+    <!-- Gives a general age rating based on the document's content -->
+    <meta name="rating" content="General" />
+    <!-- Prevent people from saving things from website -->
+    <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website XD" />
+    <!-- Controls the viewport (the user's visible area of web page), "width" sets the width to follow the screen-width, "initial-scale" sets the initial zoom level when page is fist loaded-->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+    <!-- Define title of the web page -->
+    <title>Craccken</title>
+    <!-- Set favicons of the page -->
+    <link rel="website icon" type="svg" href="https://raw.githubusercontent.com/Craccken/assets/main/logo/craccken-logo-red.svg">
 
-<!-- Font --> 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@400;600&family=Poor+Story&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
+    <!-- Font --> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:wght@400;600&family=Poor+Story&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style/style.css" />
-  <link rel="stylesheet" href="style/cursor.css" />
-  <link rel="stylesheet" href="style/button.css"> 
- </head>
- <body>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/cursor.css" />
+    <link rel="stylesheet" href="style/button.css"> 
+  </head>
+  <body>
   <div class="header">
     <!-- <img src="assets/BANNER.png" alt=".." class="banner-jumbotron"> -->
     <h1 class="banner-jumbotron">BANNER</h1>
@@ -82,13 +124,13 @@
   </div>
   <footer>
     <div class="icons">
-      <img src="assets/github.svg" alt="..">
-      <img src="assets/mail.svg" alt="..">
-      <img src="assets/linux.svg" alt=".." class="linuk">
+      <a href="https://github.com/Craccken"><img src="assets/github.svg" alt=".."></a>
+      <a href="mailto:Craccken@protonmail.com"><img src="assets/mail.svg" alt=".."></a>
+      <a href="https://github.com/Craccken/craccken-linux"><img src="assets/linux.svg" alt=".." class="linuk"></a>
       <img src="assets/Flag_of_Indonesia.svg" alt=".." style="border-radius: 50%;">
     </div>
   </footer>
   <div class="inner-cursor" id="inner-cursor"></div>
- </body>
+  </body>
  <script src="js/cursor.js"></script>
 </html>
