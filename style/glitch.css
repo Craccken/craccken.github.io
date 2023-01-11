@@ -26,7 +26,7 @@
  top: 0px;
 }
 .wrapper h1.glitch::before {
- left: -27px;
+ left: -29px;
  top: -30px;
  text-shadow: -2px 0 red;
  animation-name: glitch-animation-1;
