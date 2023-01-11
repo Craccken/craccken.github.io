@@ -31,7 +31,7 @@ body {
  background-repeat: no-repeat;
  background-size: cover;
  height: fit-content;
- width: auto;
+ width: 100vw;
  cursor: none;
 
  background-color: #040507;
@@ -319,6 +319,12 @@ footer .icons a {
   display: none;
  }
  .banner-jumbotron {
+  display: none;
+ }
+ .horizontal-separator {
+  display: none;
+ }
+ .tanda2 {
   display: none;
  }
 }
