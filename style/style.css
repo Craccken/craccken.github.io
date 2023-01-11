@@ -20,16 +20,18 @@
 }
 
 body {
+ overflow-x: hidden;
  background-image: linear-gradient(
    to bottom,
    rgba(1, 2, 4, 0.9) 0%,
+   rgba(1, 4, 9, 0.9) 25.95%,
    rgba(1, 4, 9, 0.9) 100%
   ),
   url("../assets/batik.jpg");
  background-repeat: no-repeat;
  background-size: cover;
- height: 2000px;
- width: 100%;
+ height: fit-content;
+ width: auto;
  cursor: none;
 
  background-color: #040507;
@@ -273,16 +275,18 @@ footer {
  width: 100%;
  height: 100px;
  margin-top: 80px;
- /* margin-bottom: 60px; */
 }
 
 footer .icons {
- /* background-color: red; */
  display: flex;
  justify-content: space-between;
  margin-inline: auto;
  padding: 20px;
  width: 250px;
+}
+
+footer .icons a {
+ cursor: none;
 }
 
 .icons img {
@@ -297,11 +301,22 @@ footer .icons {
  .horizontal-separator {
   height: calc(100vh + 14%);
  }
+ .container div.isi {
+  margin-top: 150px;
+ }
+ .features-jumbotron {
+  font-size: 8em;
+  top: calc(100vh + 56%);
+  left: 20%;
+ }
 }
 
 @media screen and (height > 1399px) {
  .horizontal-separator {
   height: calc(100vh + 13%);
+ }
+ .features-jumbotron {
+  display: none;
  }
 }
 
