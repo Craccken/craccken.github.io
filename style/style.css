@@ -318,6 +318,9 @@ footer .icons a {
  .features-jumbotron {
   display: none;
  }
+ .banner-jumbotron {
+  display: none;
+ }
 }
 
 @media screen and (max-width: 512px) {
