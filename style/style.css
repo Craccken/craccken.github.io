@@ -22,8 +22,7 @@
 body {
  background-image: linear-gradient(
    to bottom,
-   rgba(1, 2, 4, 0.9) 0.01%,
-   rgba(1, 4, 9, 0.9) 25.95%,
+   rgba(1, 2, 4, 0.9) 0%,
    rgba(1, 4, 9, 0.9) 100%
   ),
   url("../assets/batik.jpg");
