@@ -28,9 +28,9 @@
 .wrapper h1.glitch::before {
  left: -29px;
  top: -30px;
- text-shadow: -2px 0 red;
+ text-shadow: 2px 0 #cc0f39;
  animation-name: glitch-animation-1;
- animation-duration: 4s;
+ animation-duration: 2s;
  animation-timing-function: linear;
  animation-delay: 0s;
  animation-iteration-count: infinite;
@@ -39,9 +39,9 @@
 .wrapper h1.glitch::after {
  left: -31px;
  top: -30px;
- text-shadow: -2px 0 blue;
+ text-shadow: -1px 0 #0ffbf9;
  animation-name: glitch-animation-2;
- animation-duration: 4s;
+ animation-duration: 2s;
  animation-timing-function: linear;
  animation-delay: 0s;
  animation-iteration-count: infinite;
