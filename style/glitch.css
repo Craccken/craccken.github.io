@@ -26,22 +26,22 @@
  top: 0px;
 }
 .wrapper h1.glitch::before {
- left: -29px;
+ left: -30px;
  top: -30px;
  text-shadow: 2px 0 #cc0f39;
  animation-name: glitch-animation-1;
- animation-duration: 2s;
+ animation-duration: 3s;
  animation-timing-function: linear;
  animation-delay: 0s;
  animation-iteration-count: infinite;
  animation-direction: reverse-alternate;
 }
 .wrapper h1.glitch::after {
- left: -31px;
+ left: -30px;
  top: -30px;
- text-shadow: -1px 0 #0ffbf9;
+ text-shadow: -2px 0 #43c7c4;
  animation-name: glitch-animation-2;
- animation-duration: 2s;
+ animation-duration: 3s;
  animation-timing-function: linear;
  animation-delay: 0s;
  animation-iteration-count: infinite;
