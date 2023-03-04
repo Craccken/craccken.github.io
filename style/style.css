@@ -282,7 +282,7 @@ footer .icons {
  justify-content: space-between;
  margin-inline: auto;
  padding: 20px;
- width: 250px;
+ width: 200px;
 }
 
 footer .icons a {
@@ -290,11 +290,11 @@ footer .icons a {
 }
 
 .icons img {
- width: 40px;
+ width: 30px;
 }
 
 .icons img.linuk {
- width: 35px;
+ width: 25px;
 }
 
 @media screen and (height > 899px) {
